@@ -30,7 +30,20 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    // Oracle JDBC Driver (Java 11, 17, 21 지원)
+    implementation 'com.oracle.database.jdbc:ojdbc11:21.11.0.0'
+
+    // Oracle PKI (Java 21 환경 최적화)
+    implementation 'com.oracle.database.security:oraclepki:21.11.0.0'
+
+    // Oracle Security Developer Tools - Certificate
+    implementation 'com.oracle.database.security:osdt_cert:21.11.0.0'
+
+    // Oracle Security Developer Tools - Core
+    implementation 'com.oracle.database.security:osdt_core:21.11.0.0'
+
+
+
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
