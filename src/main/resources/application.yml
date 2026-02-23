@@ -16,3 +16,11 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+  jackson:
+    time-zone: Asia/Seoul
+    date-format: yyyy-MM-dd HH:mm:ss
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
