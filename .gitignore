@@ -38,3 +38,7 @@ out/
 /Wallet_lottodb
 
 .env
+
+### Logs ###
+logs/
+*.log
